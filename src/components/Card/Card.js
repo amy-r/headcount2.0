@@ -23,10 +23,10 @@ function Card({ location, data, handleClick, style }) {
 }
 
 Card.propTypes = {
-  location: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  location: PropTypes.string,
+  handleClick: PropTypes.func,
   style: PropTypes.string,
-  data: PropTypes.object.isRequired
+  data: PropTypes.object
 };
   
 export default Card;
