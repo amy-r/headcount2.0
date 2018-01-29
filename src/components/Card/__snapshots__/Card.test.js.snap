@@ -48,7 +48,9 @@ ShallowWrapper {
           className="district-list"
 >
            
-          <li>
+          <li
+                    className="low"
+          >
                     data
                      : 
                     Object {
@@ -102,7 +104,9 @@ ShallowWrapper {
           "children": Array [
             " ",
             Array [
-              <li>
+              <li
+                className="low"
+>
                 data
                  : 
                 Object {
@@ -149,6 +153,7 @@ ShallowWrapper {
                   "2014": 0.741,
                 },
               ],
+              "className": "low",
             },
             "ref": null,
             "rendered": Array [
@@ -195,7 +200,9 @@ ShallowWrapper {
             className="district-list"
 >
              
-            <li>
+            <li
+                        className="low"
+            >
                         data
                          : 
                         Object {
@@ -249,7 +256,9 @@ ShallowWrapper {
             "children": Array [
               " ",
               Array [
-                <li>
+                <li
+                  className="low"
+>
                   data
                    : 
                   Object {
@@ -296,6 +305,7 @@ ShallowWrapper {
                     "2014": 0.741,
                   },
                 ],
+                "className": "low",
               },
               "ref": null,
               "rendered": Array [

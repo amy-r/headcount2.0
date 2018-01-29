@@ -11,7 +11,6 @@ class Header extends Component {
   }
 
 render() {
-console.log(this.props)
   return (
     <div className= {this.props.size}>  
       <div className='top'>
@@ -28,4 +27,7 @@ console.log(this.props)
  }
 }
 
+Header.propTypes = {
+  size: PropTypes.string.isRequired
+}
 export default Header;

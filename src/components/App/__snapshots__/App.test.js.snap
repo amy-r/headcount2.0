@@ -18,37 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
-          <div
-                    className="top"
-          >
-                    <img
-                              className="line"
-                              src="line.svg"
-                    />
-                    <p
-                              className="welcome"
-                    >
-                              Welcome to 
-                    </p>
-                    <img
-                              className="line"
-                              src="line.svg"
-                    />
-          </div>
-          <logo>
-                    <img
-                              className="icon"
-                              src="icon.svg"
-                    />
-                    <h1>
-                              Headcount 2.0
-                    </h1>
-          </logo>
-          <p>
-                     A simulated data search app built in React 
-          </p>
-</header>,
+        <Header
+          size="large"
+/>,
         <SearchBar
           className="SearchBar"
           filterCards={[Function]}
@@ -2956,6 +2928,7 @@ ShallowWrapper {
                             ]
           }
           handleClick={[Function]}
+          headerSize="large"
           selected={Array []}
 />,
       ],
@@ -2966,161 +2939,13 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <div
-              className="top"
->
-              <img
-                            className="line"
-                            src="line.svg"
-              />
-              <p
-                            className="welcome"
-              >
-                            Welcome to 
-              </p>
-              <img
-                            className="line"
-                            src="line.svg"
-              />
-</div>,
-            <logo>
-              <img
-                            className="icon"
-                            src="icon.svg"
-              />
-              <h1>
-                            Headcount 2.0
-              </h1>
-</logo>,
-            <p>
-               A simulated data search app built in React 
-</p>,
-          ],
+          "size": "large",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <img
-                  className="line"
-                  src="line.svg"
-/>,
-                <p
-                  className="welcome"
->
-                  Welcome to 
-</p>,
-                <img
-                  className="line"
-                  src="line.svg"
-/>,
-              ],
-              "className": "top",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "line",
-                  "src": "line.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Welcome to ",
-                  "className": "welcome",
-                },
-                "ref": null,
-                "rendered": "Welcome to ",
-                "type": "p",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "line",
-                  "src": "line.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <img
-                  className="icon"
-                  src="icon.svg"
-/>,
-                <h1>
-                  Headcount 2.0
-</h1>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "icon",
-                  "src": "icon.svg",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Headcount 2.0",
-                },
-                "ref": null,
-                "rendered": "Headcount 2.0",
-                "type": "h1",
-              },
-            ],
-            "type": "logo",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": " A simulated data search app built in React ",
-            },
-            "ref": null,
-            "rendered": " A simulated data search app built in React ",
-            "type": "p",
-          },
-        ],
-        "type": "header",
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -6039,6 +5864,7 @@ ShallowWrapper {
             },
           ],
           "handleClick": [Function],
+          "headerSize": "large",
           "selected": Array [],
         },
         "ref": null,
@@ -6055,37 +5881,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
-            <div
-                        className="top"
-            >
-                        <img
-                                    className="line"
-                                    src="line.svg"
-                        />
-                        <p
-                                    className="welcome"
-                        >
-                                    Welcome to 
-                        </p>
-                        <img
-                                    className="line"
-                                    src="line.svg"
-                        />
-            </div>
-            <logo>
-                        <img
-                                    className="icon"
-                                    src="icon.svg"
-                        />
-                        <h1>
-                                    Headcount 2.0
-                        </h1>
-            </logo>
-            <p>
-                         A simulated data search app built in React 
-            </p>
-</header>,
+          <Header
+            size="large"
+/>,
           <SearchBar
             className="SearchBar"
             filterCards={[Function]}
@@ -8993,6 +8791,7 @@ ShallowWrapper {
                                   ]
             }
             handleClick={[Function]}
+            headerSize="large"
             selected={Array []}
 />,
         ],
@@ -9003,161 +8802,13 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <div
-                className="top"
->
-                <img
-                                className="line"
-                                src="line.svg"
-                />
-                <p
-                                className="welcome"
-                >
-                                Welcome to 
-                </p>
-                <img
-                                className="line"
-                                src="line.svg"
-                />
-</div>,
-              <logo>
-                <img
-                                className="icon"
-                                src="icon.svg"
-                />
-                <h1>
-                                Headcount 2.0
-                </h1>
-</logo>,
-              <p>
-                 A simulated data search app built in React 
-</p>,
-            ],
+            "size": "large",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <img
-                    className="line"
-                    src="line.svg"
-/>,
-                  <p
-                    className="welcome"
->
-                    Welcome to 
-</p>,
-                  <img
-                    className="line"
-                    src="line.svg"
-/>,
-                ],
-                "className": "top",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "line",
-                    "src": "line.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Welcome to ",
-                    "className": "welcome",
-                  },
-                  "ref": null,
-                  "rendered": "Welcome to ",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "line",
-                    "src": "line.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <img
-                    className="icon"
-                    src="icon.svg"
-/>,
-                  <h1>
-                    Headcount 2.0
-</h1>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "icon",
-                    "src": "icon.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Headcount 2.0",
-                  },
-                  "ref": null,
-                  "rendered": "Headcount 2.0",
-                  "type": "h1",
-                },
-              ],
-              "type": "logo",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": " A simulated data search app built in React ",
-              },
-              "ref": null,
-              "rendered": " A simulated data search app built in React ",
-              "type": "p",
-            },
-          ],
-          "type": "header",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
@@ -12076,6 +11727,7 @@ ShallowWrapper {
               },
             ],
             "handleClick": [Function],
+            "headerSize": "large",
             "selected": Array [],
           },
           "ref": null,
