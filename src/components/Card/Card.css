@@ -12,6 +12,14 @@
   margin: 2% 1% 2% 0;
 }
 
+.low {
+  color: black;
+}
+
+.high {
+  color: #d18643;
+}
+
 .district-header {
   font-size: 24px;
   pointer-events: none;

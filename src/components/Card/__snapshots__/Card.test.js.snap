@@ -49,7 +49,6 @@ ShallowWrapper {
 >
            
           <li>
-                     
                     data
                      : 
                     Object {
@@ -65,12 +64,13 @@ ShallowWrapper {
                               "2013": 0.703,
                               "2014": 0.741,
                             }
-                     
           </li>
            
 </ul>,
       ],
       "className": "district-card",
+      "id": "Colorado",
+      "onClick": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -103,7 +103,6 @@ ShallowWrapper {
             " ",
             Array [
               <li>
-                 
                 data
                  : 
                 Object {
@@ -119,7 +118,6 @@ ShallowWrapper {
                                 "2013": 0.703,
                                 "2014": 0.741,
                               }
-                 
 </li>,
             ],
             " ",
@@ -135,7 +133,6 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                " ",
                 "data",
                 " : ",
                 Object {
@@ -151,12 +148,10 @@ ShallowWrapper {
                   "2013": 0.703,
                   "2014": 0.741,
                 },
-                " ",
               ],
             },
             "ref": null,
             "rendered": Array [
-              " ",
               "data",
               " : ",
               Object {
@@ -172,7 +167,6 @@ ShallowWrapper {
                 "2013": 0.703,
                 "2014": 0.741,
               },
-              " ",
             ],
             "type": "li",
           },
@@ -202,7 +196,6 @@ ShallowWrapper {
 >
              
             <li>
-                         
                         data
                          : 
                         Object {
@@ -218,12 +211,13 @@ ShallowWrapper {
                                     "2013": 0.703,
                                     "2014": 0.741,
                                   }
-                         
             </li>
              
 </ul>,
         ],
         "className": "district-card",
+        "id": "Colorado",
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -256,7 +250,6 @@ ShallowWrapper {
               " ",
               Array [
                 <li>
-                   
                   data
                    : 
                   Object {
@@ -272,7 +265,6 @@ ShallowWrapper {
                                     "2013": 0.703,
                                     "2014": 0.741,
                                   }
-                   
 </li>,
               ],
               " ",
@@ -288,7 +280,6 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  " ",
                   "data",
                   " : ",
                   Object {
@@ -304,12 +295,10 @@ ShallowWrapper {
                     "2013": 0.703,
                     "2014": 0.741,
                   },
-                  " ",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                " ",
                 "data",
                 " : ",
                 Object {
@@ -325,7 +314,6 @@ ShallowWrapper {
                   "2013": 0.703,
                   "2014": 0.741,
                 },
-                " ",
               ],
               "type": "li",
             },

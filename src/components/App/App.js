@@ -10,20 +10,21 @@ class App extends Component {
   constructor() {
     super();
     
-    this.district = new DistrictRepository(kinderData)
+    this.district = new DistrictRepository(kinderData);
 
     this.state = {
       data: this.district.findAllMatches(),
       selected: [],
-      headerSize: 'large'
-    }
+      headerSize: 'large',
+      compared: []
+    };
   }
 
-  filterCards = (searchValue) => {
+  filterCards = (searchValue = '') => {
     const foundItems = this.district.findAllMatches(searchValue);
     this.setState({
       data: foundItems
-    })
+    });
   }
 
   componentDidMount(){
@@ -42,6 +43,7 @@ class App extends Component {
   handleClick = (e) => {
     const truth = this.state.selected; 
     const selectedDistrict = this.district.findByName(e.target.id);
+
     selectedDistrict.style = 'selected';
 
     this.manageSelected(truth, selectedDistrict);
@@ -63,12 +65,20 @@ class App extends Component {
     }
     this.setState({
       selected: truth
-    })
+    });
   }
 
   makeComparison = (dist1, dist2) => {
-    console.log(this.district.compareDistrictAverages(dist1.location, dist2.location))
+    const compared = Object.entries(
+      this.district.compareDistrictAverages(
+        dist1.location, 
+        dist2.location
+      )
+    );
 
+    this.setState({
+      compared
+    });
   }
 
   render() {
