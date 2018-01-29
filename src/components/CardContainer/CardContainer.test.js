@@ -12,7 +12,6 @@ import SearchBar from '../searchbar/SearchBar.js'
 describe( 'CardContainer', () => {
 
   test('should display cards in state', () => {
-
     const mockCard =  
     [ {location: "Colorado", 
        data: {
@@ -27,15 +26,21 @@ describe( 'CardContainer', () => {
         2012 : 0.695,
         2013 : 0.703,
         2014 : 0.741
-        }}]
+        }}
+    ]
+
+    const mockComparison = [['COlORADO', 1]]
+
+    const mockFunction = () => {
+
+    }
       
-    const renderedComp = shallow(<CardContainer data={mockCard}/>);
+    const renderedComp = shallow(<CardContainer data={mockCard} selected={mockCard} compared={mockComparison} handleClick={mockFunction}/>);
     expect(renderedComp).toMatchSnapshot();
   });
 
 
   test('should display the number of cards called in filterCards', () => {
-
     const renderedApp = mount(<App />);
 
     renderedApp.instance().filterCards('Colorado');
@@ -44,11 +49,7 @@ describe( 'CardContainer', () => {
     expect(renderedApp.instance().state.data.length).toBe(2);
 
     expect(renderedApp.find('.district-card').length).toBe(2);
-  })
-  
+  });  
 })
 
-// should display selected cards (length)
-
-//anything that changes state, anything that has a method
 

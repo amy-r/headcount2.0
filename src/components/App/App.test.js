@@ -143,12 +143,38 @@ describe( 'App Component', () => {
 
     expect(renderedComp.state().compared).toEqual(expectedState)
   })
-
-  test('on a third click, it should add the newly found district to the end of the array and the previous last element to the front of the array', () => {
+  test('on a third click, the length of selected state should still be 2', () => {
     const renderedComp = shallow(<App />);
-    const expectedState = ([
-    {location: 'COLORADO',
-     data:  
+    const e1 = {
+      type: 'click', 
+      target: { id: "ACADEMY 20" }
+    }
+    const e2 = {
+      type: 'click', 
+      target: { id: "COLORADO" }
+    }
+    const e3 = {
+      type: 'click', 
+      target: { id: "ACADEMY 20" }
+    }
+
+    renderedComp.instance().handleClick(e1);
+    renderedComp.update();
+
+    renderedComp.instance().handleClick(e2);
+    renderedComp.update();
+
+    renderedComp.instance().handleClick(e3);
+    renderedComp.update();
+
+    expect(renderedComp.state().selected.length).toEqual(2)
+  });
+
+  test('on third click, the new click target should replace the last index of selected state', () => {
+  const renderedComp = shallow(<App />);
+   const expectedState = ([
+      {location: 'COLORADO',
+       data: 
        {2004: 0.24,
         2005: 0.278,
         2006: 0.337,
@@ -160,10 +186,46 @@ describe( 'App Component', () => {
         2012: 0.695,
         2013: 0.703,
         2014: 0.741},
-     style: 'selected'},
-    ])
+      style: 'selected'
+     }, 
+     {location: 'ACADEMY 20',
+       data: {2004:0.302,
+              2005: 0.267,
+              2006: 0.354,
+              2007: 0.392,
+              2008: 0.385,
+              2009: 0.39,
+              2010: 0.436,
+              2011: 0.489,
+              2012: 0.479,
+              2013: 0.488,
+              2014: 0.49
+             },
+      style: 'selected'
+      }
+    ]);
+   const e1 = {
+      type: 'click', 
+      target: { id: "COLORADO" }
+    }
+    const e2 = {
+      type: 'click', 
+      target: { id: "COLORADO" }
+    }
+    const e3 = {
+      type: 'click', 
+      target: { id: "ACADEMY 20" }
+    }
 
+    renderedComp.instance().handleClick(e1);
+    renderedComp.update();
 
+    renderedComp.instance().handleClick(e2);
+    renderedComp.update();
+
+    renderedComp.instance().handleClick(e3);
+    renderedComp.update();
+
+    expect(renderedComp.state().selected).toEqual(expectedState);
   })
-
 })
