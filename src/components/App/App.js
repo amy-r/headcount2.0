@@ -31,8 +31,8 @@ class App extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll = (e) => {
-    let posY = parseInt(e.currentTarget.scrollY);
+  handleScroll = (ev) => {
+    let posY = parseInt(ev.currentTarget.scrollY);
 
     const headerSize = posY > 85 ? 'small' : 'large'
     this.setState({
@@ -40,9 +40,9 @@ class App extends Component {
     })
   }
 
-  handleClick = (e) => {
+  handleClick = (ev) => {
     const truth = this.state.selected; 
-    const selectedDistrict = this.district.findByName(e.target.id);
+    const selectedDistrict = this.district.findByName(ev.target.id);
 
     selectedDistrict.style = 'selected';
 
@@ -51,17 +51,17 @@ class App extends Component {
 
   manageSelected = (truth, selectedDistrict) => {
     switch (truth.length) {
-      case 2:
-        truth.shift();
-        truth.push(selectedDistrict);
-        this.makeComparison(truth[0], truth[1])
-        break;
-      case 1:
-        truth.unshift(selectedDistrict)
-        this.makeComparison(truth[0], truth[1])
-        break
-      default:
-        truth.unshift(selectedDistrict)
+    case 2:
+      truth.shift();
+      truth.push(selectedDistrict);
+      this.makeComparison(truth[0], truth[1]);
+      break;
+    case 1:
+      truth.unshift(selectedDistrict);
+      this.makeComparison(truth[0], truth[1]);
+      break;
+    default:
+      truth.unshift(selectedDistrict);
     }
     this.setState({
       selected: truth
