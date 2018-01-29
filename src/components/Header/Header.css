@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Slabo+13px');
+
+
+.small {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small h1 {
+  font-size: 24px;
+  color: #1e5799;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+}
+
+.small .icon {
+  height: 30px;
+  width: 30px;
+}
+.small p {
+  display: none;
+}
+.small .line {
+  display: none;
+}
+
+.small .instructions {
+  display: none;
+}
+
+.large {
+  background-color: white;
+  position: fixed;
+  top:0;
+  height: 150px;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  background-color: white;
+  position: fixed;
+}
+
+.large h1 {
+  color: #1e5799;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+ p {
+  color: #d18643;
+  font-family: 'Slabo 13px', serif;
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.welcome {
+  color: #d18643;
+  display: inline-block;
+  margin-bottom: -0.5%;
+}
+
+.instructions {
+  text-align: center;
+  color: white;
+  margin-bottom: 8%;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 200px;
+  margin: 0 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
