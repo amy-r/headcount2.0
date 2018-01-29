@@ -17,7 +17,7 @@
 }
 
 .high {
-  color: magenta
+  color: #d18643;
 }
 
 .district-header {
@@ -25,6 +25,9 @@
   pointer-events: none;
 }
 
+h3 {
+  color: #1e5799;
+}
 
 .district-list {
   list-style: none;
@@ -33,7 +36,6 @@
   padding: 0;
   pointer-events: none;
 }
-
 
 .selected {
   margin: auto;

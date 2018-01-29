@@ -17,7 +17,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className='search-field'>
         <input className='search-bar'
           type='text' 
           placeholder='Filter by County...'

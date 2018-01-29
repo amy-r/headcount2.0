@@ -4,6 +4,7 @@ import DistrictRepository from '../../helper.js';
 import kinderData from '../../kindergartners_in_full_day_program.js';
 import CardContainer from '../CardContainer/CardContainer';
 import SearchBar from '../searchbar/SearchBar';
+import Header from '../Header/Header';
 
 class App extends Component {
   constructor() {
@@ -14,6 +15,7 @@ class App extends Component {
     this.state = {
       data: this.district.findAllMatches(),
       selected: [],
+      headerSize: 'large',
       compared: []
     };
   }
@@ -25,9 +27,22 @@ class App extends Component {
     });
   }
 
-  handleClick = (ev) => {
-    const truth = this.state.selected;
-    const selectedDistrict = this.district.findByName(ev.target.id);
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = (e) => {
+    let posY = parseInt(e.currentTarget.scrollY);
+    if(posY > 85){
+      this.setState({
+        headerSize: 'small'
+      })
+    }
+  }
+
+  handleClick = (e) => {
+    const truth = this.state.selected; 
+    const selectedDistrict = this.district.findByName(e.target.id);
 
     selectedDistrict.style = 'selected';
 
@@ -36,17 +51,17 @@ class App extends Component {
 
   manageSelected = (truth, selectedDistrict) => {
     switch (truth.length) {
-    case 2:
-      truth.shift();
-      truth.push(selectedDistrict);
-      this.makeComparison(truth[0], truth[1]);
-      break;
-    case 1:
-      truth.unshift(selectedDistrict);
-      this.makeComparison(truth[0], truth[1]);
-      break;
-    default:
-      truth.unshift(selectedDistrict);
+      case 2:
+        truth.shift();
+        truth.push(selectedDistrict);
+        this.makeComparison(truth[0], truth[1])
+        break;
+      case 1:
+        truth.unshift(selectedDistrict)
+        this.makeComparison(truth[0], truth[1])
+        break
+      default:
+        truth.unshift(selectedDistrict)
     }
     this.setState({
       selected: truth
@@ -69,18 +84,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <header>
-          <div className='top'>
-            <img className='line' src={ require('./line.svg') } />
-            <p className='welcome'>Welcome to </p>
-            <img className='line' src={ require('./line.svg') } />
-          </div> 
-          <logo>
-            <img className ='icon' src={ require('./icon.svg') } />
-            <h1>Headcount 2.0</h1>
-          </logo>  
-          <p> A simulated data search app built in React </p>
-        </header>  
+        <Header size= {this.state.headerSize} /> 
         <SearchBar className='SearchBar' filterCards={this.filterCards} />
         <CardContainer {...this.state} handleClick={this.handleClick}/>
       </div>
