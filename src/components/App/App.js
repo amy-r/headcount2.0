@@ -33,11 +33,11 @@ class App extends Component {
 
   handleScroll = (e) => {
     let posY = parseInt(e.currentTarget.scrollY);
-    if(posY > 85){
-      this.setState({
-        headerSize: 'small'
-      })
-    }
+
+    const headerSize = posY > 85 ? 'small' : 'large'
+    this.setState({
+      headerSize
+    })
   }
 
   handleClick = (e) => {
