@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../Card/Card';
 import './CardContainer.css';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 function CardContainer({data, selected, handleClick}) {
   const allCities = data.map( (city, index) => {

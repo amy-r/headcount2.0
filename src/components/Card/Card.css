@@ -12,13 +12,14 @@
   margin: 2% 1% 2% 0;
 }
 
-//need to make font size responsive
-
 .district-header {
   font-size: 24px;
   pointer-events: none;
 }
 
+h3 {
+  color: #1e5799;
+}
 
 .district-list {
   list-style: none;
@@ -27,7 +28,6 @@
   padding: 0;
   pointer-events: none;
 }
-
 
 .selected {
   margin: auto;

@@ -1,47 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Slabo+13px');
 
 .App {
-  background-image: #5ac475; /* Old browsers */
-  background-image: -moz-linear-gradient(top, #5ac475 0%, #469d7d 50%); /* FF3.6-15 */
-  background-image: -webkit-linear-gradient(top, #5ac475 0%,#469d7d 50%); /* Chrome10-25,Safari5.1-6 */
-  background-image: linear-gradient(to bottom, #5ac475 0%,#469d7d 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ac475', endColorstr='#469d7d',GradientType=0 ); /* IE6-9 */
+  background-image: #1e5799; /* Old browsers */
+  background-image: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
+  background-image: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
 
-header {
-  text-align: center;
-  margin-top: 0;
-  background-color: white;
-  z-index: 10;
-}
 
-h1 {
-  color: #469d7d;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-  display: inline-block;
-}
-
-p {
-  color: #d18643;
-  font-family: 'Slabo 13px', serif;
-  font-size: 18px;
-  margin-top: 0;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.welcome {
-  color: #469d7d;
-  display: inline-block;
-}
 
 .search-bar {
   display: block;
@@ -55,30 +25,9 @@ p {
   font-family: 'Slabo 13px', serif;
 }
 
-.instructions {
-  text-align: center;
-  color: white;
-  margin-bottom: 8%;
+.search-field {
+  padding-top: 100px;
 }
 
-.icon {
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  margin-right: 20px;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-}
 
-.line {
-  width: 200px;
-  margin: 0 20px;
-}
-
-.top {
-  display: flex;
-  justify-content: center;
-}
